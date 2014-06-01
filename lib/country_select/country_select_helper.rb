@@ -1,8 +1,8 @@
 module ActionView
   module Helpers
     class FormBuilder
-      def country_select(object,method, options = {}, html_options = {})
-        @template.country_select(object, method, objectify_options(options), @default_options.merge(html_options))
+      def country_select(method, input ,options = {}, html_options = {})
+        @template.country_select(method, objectify_options(options), @default_options.merge(html_options))
       end
     end
 
